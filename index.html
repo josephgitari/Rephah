@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question for You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Proposal Card -->
+    <div class="proposal-container" id="proposalCard">
+        <div class="heart-icon">❤️</div>
+        <h1>Hey Rephah 😍, I have a question for you...</h1>
+        <p>Will you be my girlfriend ☺️?</p>
+        
+        <div class="btn-group">
+            <button class="btn yes-btn" onclick="celebrate()">Yes! ✨</button>
+            <!-- The No button playfully shrinks or moves, but let's keep it classic for now -->
+            <button class="btn no-btn" id="noBtn" onmouseover="moveNoButton()">No</button>
+        </div>
+    </div>
+
+    <!-- Success Screen (Hidden by default) -->
+    <div class="success-container hidden" id="successScreen">
+        <!-- CSS Animated Bunny -->
+        <div class="bunny">
+            <div class="ears">
+                <div class="ear left"></div>
+                <div class="ear right"></div>
+            </div>
+            <div class="bunny-body">
+                <div class="eyes">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                </div>
+                <div class="cheeks"></div>
+                <div class="smile">^</div>
+            </div>
+            <!-- Holding a little heart -->
+            <div class="bunny-heart">❤️</div>
+        </div>
+
+        <h1 class="celebration-text">Yay!! She said YES! 🌸</h1>
+        <p class="sub-text">You've made me the happiest person alive.</p>
+         <p class="sub-text">I love you 😍.</p>
+    </div>
+
+    <!-- Container where popping flowers will be generated -->
+    <div id="flowerContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
